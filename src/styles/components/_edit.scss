@@ -1,0 +1,14 @@
+.remove-button {
+    background: red;
+    margin-left: $m-size;
+    width: 96%;
+}
+.edit-link {
+    text-decoration: none;
+    color: $dark-grey;
+    span {
+        color: blue;
+        font-style: italic;
+        font-weight: bold;
+    }
+}

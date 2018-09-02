@@ -5,8 +5,8 @@ import { startEditPost, startRemovePost } from "../actions/posts";
 import { Link } from "react-router-dom";
 
 const EditPage = (props)=>(
-    <div>
-        <Link to={`/read/${props.post.id}`}>Post readable at: localhost:8080/read/{props.post.id}</Link>
+    <div className="content-container">
+        <Link className="edit-link" to={`/read/${props.post.id}`}>Post shareable for read at: <span>localhost:8080/read/{props.post.id}</span> </Link>
         <PostForm 
             post={props.post}
             onSubmit={(post)=>{
@@ -14,7 +14,7 @@ const EditPage = (props)=>(
                 props.history.push("/dashboard")
             }}
         />
-        <button onClick={
+        <button className="button remove-button" onClick={
             ()=>{
                 props.dispatch(startRemovePost(props.post.id))
                 props.history.push("/dashboard")

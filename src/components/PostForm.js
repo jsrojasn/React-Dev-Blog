@@ -35,21 +35,21 @@ class PostForm extends React.Component {
     }
     render(){
         return (
-            <form onSubmit={this.onSubmit}>
-                {this.state.error && <p>{this.state.error}</p>}
+            <form className="content-container form" onSubmit={this.onSubmit}>
+                {this.state.error && <p className="form__error">{this.state.error}</p>}
                 <input 
                     type="text"
-                    placeholder="Title of your post (required)"
+                    placeholder="Post Title"
                     value={this.state.title}
                     onChange={this.onChangeTitle}
                 />
                 <textarea 
-                    placeholder="Body of your post" 
+                    placeholder="Post Body" 
                     value={this.state.body}
                     onChange={this.onChangeBody}   
                 >
                 </textarea>
-                <button>Add</button>
+                <button className="button button-save">Save Post</button>
             
             </form>
         )

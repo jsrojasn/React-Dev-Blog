@@ -4,9 +4,14 @@ import moment from "moment";
 
 const ReadPage = (props) => (
     <div>
-        <h1>{props.post.title}</h1>
-        <p>{props.post.body}</p>
-        <p>{moment(props.post.createdAt).format('MMMM Do YYYY, h:mm a')}</p>
+        <h1 className="read-header">Read this Blog Post</h1>
+        <div className="content-container read-post">
+            <h2 className="read-title">{props.post.title.toUpperCase()}</h2>
+            <p className="read-body">{props.post.body}</p>
+            <div className="read-date">
+                <p>{moment(props.post.createdAt).format('MMMM Do YYYY, h:mm a')}</p>
+            </div>
+        </div>
     </div>
 )
 

@@ -1,0 +1,21 @@
+.post {
+    border:1px solid black;
+    margin: $s-size ;
+    padding: 0 $m-size;
+    word-break: break-all;
+}
+.post-link{
+    color: $dark-grey;
+    text-decoration: none;
+}
+
+.post-title {
+    
+    margin: $s-size 0;
+    
+}
+.post-date {
+    display: flex;
+    justify-content: end;
+    font-style: italic;
+}

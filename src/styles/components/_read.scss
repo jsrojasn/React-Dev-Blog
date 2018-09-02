@@ -1,0 +1,16 @@
+.read-header{
+    background: #000000;
+    text-align: center;
+    color: white;
+    margin-top: 0;
+    font-size: 5.6rem;
+}
+.read-post {
+    border: 1px solid black;
+    word-break: break-all;
+}
+.read-date {
+    display: flex;
+    justify-content: end;
+    font-style: italic;
+}
