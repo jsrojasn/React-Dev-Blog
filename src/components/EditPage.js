@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const EditPage = (props)=>(
     <div className="content-container">
-        <Link className="edit-link" to={`/read/${props.post.id}`}>Post shareable for read at: <span>localhost:8080/read/{props.post.id}</span> </Link>
+        <Link className="edit-link" to={`/read/${props.post.id}`}>Post shareable for read at: <span>https://mydev-blog.herokuapp/read/{props.post.id}</span> </Link>
         <PostForm 
             post={props.post}
             onSubmit={(post)=>{
